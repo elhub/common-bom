@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>no.elhub.common</groupId>
+    <artifactId>common-parent</artifactId>
+    <packaging>pom</packaging>
+    <name>common-parent</name>
+    <version>0.1.0</version>
+
+    <properties>
+        <!-- Elhub Modules -->
+        <common-date.version>[4.0.0,5.0.0)</common-date.version>
+        <!-- External Modules -->
+        <apache.commons-lang3.version>3.8</apache.commons-lang3.version>
+        <codehaus.groovy.version>2.5.6</codehaus.groovy.version>
+        <commons-beanutils.version>1.9.3</commons-beanutils.version>
+        <commons-io.version>2.6</commons-io.version>
+        <kotlin.version>1.3.50</kotlin.version>
+        <google.guava.guava.version>27.1-jre</google.guava.guava.version>
+        <jollyday.version>0.5.6</jollyday.version>
+        <junit.jupiter.version>5.5.1</junit.jupiter.version>
+        <logback.version>1.2.3</logback.version>
+        <oracle.jdbc.ojdbc8.version>12.2.0.1</oracle.jdbc.ojdbc8.version>
+        <slf4j.slf4j-api.version>1.7.25</slf4j.slf4j-api.version>
+    </properties>
+
+    <dependencyManagement>
+
+        <dependencies>
+            <!-- Elhub Modules -->
+
+            <dependency>
+                <groupId>no.elhub.common</groupId>
+                <artifactId>common-date</artifactId>
+                <version>${common-date.version}</version>
+            </dependency>
+
+            <!-- External Modules -->
+
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-beanutils</groupId>
+                <artifactId>commons-beanutils</artifactId>
+                <version>${commons-beanutils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>${commons-io.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${google.guava.guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.oracle.jdbc</groupId>
+                <artifactId>ojdbc8</artifactId>
+                <version>${oracle.jdbc.ojdbc8.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>de.jollyday</groupId>
+                <artifactId>jollyday</artifactId>
+                <version>${jollyday.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${apache.commons-lang3.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.codehaus.groovy</groupId>
+                <artifactId>groovy</artifactId>
+                <version>${codehaus.groovy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-stdlib-jdk8</artifactId>
+                <version>${kotlin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit.jupiter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-params</artifactId>
+                <version>${junit.jupiter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.slf4j-api.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+</project>

@@ -1,0 +1,6 @@
+*.iml
+/.idea
+/.teamcity/*.iml
+/.teamcity/.idea
+/local.properties
+/target
