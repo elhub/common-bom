@@ -57,4 +57,3 @@ Add common-parent as a parent project to your project in your pom.xml. Example:
 ```
 
 See [Maven Dependency Management](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management)
-
