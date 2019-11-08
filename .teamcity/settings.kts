@@ -27,7 +27,6 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2019.1"
 
 project {
-
     buildType(Build)
 }
 
@@ -41,12 +40,19 @@ object Build : BuildType({
     steps {
         maven {
             goals = "clean test"
-            runnerArgs = "-Dmaven.test.failure.ignore=true"
+            runnerArgs = "-Dmaven.test.failure.ignore=false"
+            userSettingsSelection = "settings-default.xml"
+            param("org.jfrog.artifactory.selectedDeployableServer.publishBuildInfo", "true")
+            param("org.jfrog.artifactory.selectedDeployableServer.defaultModuleVersionConfiguration", "GLOBAL")
+            param("org.jfrog.artifactory.selectedDeployableServer.urlId", "0")
+            param("org.jfrog.artifactory.selectedDeployableServer.envVarsExcludePatterns", "*password*,*secret*")
+            param("org.jfrog.artifactory.selectedDeployableServer.deployArtifacts", "true")
+            param("org.jfrog.artifactory.selectedDeployableServer.targetRepo", "elhub-mvn-release-local")
+            param("org.jfrog.artifactory.selectedDeployableServer.targetSnapshotRepo", "elhub-mvn-snapshot-local")
         }
     }
 
     triggers {
-        vcs {
-        }
+        vcs {}
     }
 })
