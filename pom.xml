@@ -8,7 +8,7 @@
     <artifactId>common-parent</artifactId>
     <packaging>pom</packaging>
     <name>common-parent</name>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
 
     <properties>
         <!-- Elhub Modules -->
@@ -18,12 +18,14 @@
         <codehaus.groovy.version>2.5.6</codehaus.groovy.version>
         <commons-beanutils.version>1.9.3</commons-beanutils.version>
         <commons-io.version>2.6</commons-io.version>
+        <commons-logging.version>1.2</commons-logging.version>
         <constretto.version>2.2.3</constretto.version>
-        <kotlin.version>1.3.50</kotlin.version>
         <everit-org.json-schema.version>1.12.0</everit-org.json-schema.version>
         <google.guava.guava.version>27.1-jre</google.guava.guava.version>
+        <jackson.version>2.9.9</jackson.version>
         <jollyday.version>0.5.6</jollyday.version>
         <junit.jupiter.version>5.5.1</junit.jupiter.version>
+        <kotlin.version>1.3.50</kotlin.version>
         <logback.version>1.2.3</logback.version>
         <oracle.jdbc.ojdbc8.version>12.2.0.1</oracle.jdbc.ojdbc8.version>
         <slf4j.slf4j-api.version>1.7.25</slf4j.slf4j-api.version>
@@ -63,6 +65,11 @@
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
             </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons-logging.version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.github.everit-org.json-schema</groupId>
@@ -74,6 +81,27 @@
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
                 <version>${google.guava.guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-xml</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.module</groupId>
+                <artifactId>jackson-module-kotlin</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
 
             <dependency>
