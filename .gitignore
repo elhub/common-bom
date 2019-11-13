@@ -4,3 +4,4 @@
 /.teamcity/.idea
 /local.properties
 /target
+.gradle/
