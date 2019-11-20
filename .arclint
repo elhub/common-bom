@@ -1,38 +1,33 @@
 {
     "exclude": [
         "(\\.idea$)",
-        "(^target/)"
+        "(\\.gradle$)",
+        "(^build/)",
+        "(^gradle/)"
     ],
     "linters": {
-       "checkstyle": {
+        "checkstyle": {
             "type": "checkstyle",
-            "include": "(\\.java$)",
-            "checkstyle.config": "../phabricator/elhubdev/checkstyle/elhub-checks.xml"
-        },
-        "chmod": {
-            "type": "chmod",
-            "exclude": [
-                "(\\.xml$)",
-                "(^.arclint$)",
-                "(\\.md$)",
-                "(^Jenkinsfile$)"
-            ]
+            "include": "(\\.java$)"
         },
         "detekt": {
             "type": "detekt",
-            "include": "(\\.kt$)",
-            "detekt.config": "../phabricator/elhubdev/detekt/elhub-config.yml"
+            "include": [
+                "(\\.kt$)",
+                "(\\.kts$)"
+            ]
         },
         "filename": {
             "type": "filename"
         },
         "json": {
             "type": "json",
-            "include": [
-                "(^\\.arcconfig$)",
-                "(^\\.arclint$)",
-                "(\\.json$)"
-            ]
+                "include": [
+                    "(^\\.arcconfig$)",
+                    "(^\\.arclint$)",
+                    "(\\.json$)",
+                    "(\\.json.sample$)"
+                ]
         },
         "generated": {
             "type": "generated"
@@ -52,8 +47,8 @@
             }
         },
         "xml": {
-            "type": "xml",
-            "include": "(\\.xml$)"
+          "type": "xml",
+          "include": "(\\.xml$)"
         }
     }
 }
