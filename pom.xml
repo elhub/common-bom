@@ -92,7 +92,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <rest-assured.rest-assured.version>4.0.0</rest-assured.rest-assured.version>
         <seleniumhq.selenium.htmlunit-driver.version>2.31.0</seleniumhq.selenium.htmlunit-driver.version>
-        <seleniumhq.selenium.selenium-java.version>3.14.0</seleniumhq.selenium.selenium-java.version>
+        <seleniumhq.selenium.selenium-java.version>3.141.5</seleniumhq.selenium.selenium-java.version>
         <slf4j.slf4j-api.version>1.7.25</slf4j.slf4j-api.version>
         <slf4j.log4j-over-slf4j.version>1.7.25</slf4j.log4j-over-slf4j.version>
         <slf4j.slf4j-simple.version>1.7.5</slf4j.slf4j-simple.version>
