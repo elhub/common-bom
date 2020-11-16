@@ -98,44 +98,44 @@
         <slf4j.slf4j-simple.version>1.7.5</slf4j.slf4j-simple.version>
         <smartbear.soapui.version>4.6.4</smartbear.soapui.version>
         <sonatype.plugins.nexus-staging.version>1.5.1</sonatype.plugins.nexus-staging.version>
-        <!--ELTOR Modules-->
-        <eljeim.version>[1.10,1.11)</eljeim.version>
-        <eldate.version>[3.6,3.7)</eldate.version>
-        <elcap.version>[1.4,1.5)</elcap.version>
-        <elucidate.version>[0.6,0.7)</elucidate.version>
-        <eltega.version>[2.4,2.5)</eltega.version>
-        <elwires.version>[3.2,3.3)</elwires.version>
+        <!--Elhub Custom Modules-->
+        <common.jeim.version>[4.0,4.1)</common.jeim.version>
+        <common.date.version>[4.0,4.1)</common.date.version>
+        <common.config.version>[2.0,2.1)</common.config.version>
+        <test-data-io.version>[4.0,4.1)</test-data-io.version>
+        <test-data-gen.version>[5.0,5.1)</test-data-gen.version>
+        <test-ewp-rest-wrapper.version>[3.0,3.1)</test-ewp-rest-wrapper.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
-            <!--ELTOR Modules-->
+            <!--Elhub Custom Modules-->
             <dependency>
-                <groupId>no.elhub</groupId>
-                <artifactId>eljeim</artifactId>
-                <version>${eljeim.version}</version>
+                <groupId>no.elhub.common</groupId>
+                <artifactId>common-jeim</artifactId>
+                <version>${common.jeim.version}</version>
             </dependency>
             <dependency>
-                <groupId>no.elhub</groupId>
-                <artifactId>eldate</artifactId>
-                <version>${eldate.version}</version>
+                <groupId>no.elhub.common</groupId>
+                <artifactId>common-date</artifactId>
+                <version>${common.date.version}</version>
             </dependency>
             <dependency>
-                <groupId>no.elhub</groupId>
-                <artifactId>elcap</artifactId>
-                <version>${elcap.version}</version>
+                <groupId>no.elhub.common</groupId>
+                <artifactId>common.config</artifactId>
+                <version>${common.config.version}</version>
             </dependency>
             <dependency>
-                <groupId>no.elhub</groupId>
-                <artifactId>elucidate</artifactId>
-                <version>${elucidate.version}</version>
+                <groupId>no.elhub.test</groupId>
+                <artifactId>test-data-io</artifactId>
+                <version>${test-data-io.version}</version>
             </dependency>
             <dependency>
-                <groupId>no.elhub</groupId>
-                <artifactId>eltega</artifactId>
-                <version>${eltega.version}</version>
+                <groupId>no.elhub.test</groupId>
+                <artifactId>test-data-gen</artifactId>
+                <version>${test-data-gen.version}</version>
             </dependency>
-            <!--ELTOR Modules-->
+            <!--Elhub Custom Modules-->
 
             <dependency>
                 <groupId>ch.qos.logback</groupId>
