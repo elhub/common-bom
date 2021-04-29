@@ -68,6 +68,11 @@ publishing {
     }
 }
 
+// No unit tests
+tasks.create("test") {
+    // Empty test task
+}
+
 tasks.withType<Jar> {
     enabled = false
 }
