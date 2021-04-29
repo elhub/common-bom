@@ -84,12 +84,12 @@ for a list of proposed features (and known issues).
 ## Contributing
 
 Contributing, issues and feature requests are welcome. See the
-[Contributing](https://code.elhub.cloud/projects/COM/repos/common-bom/browse/CONTRIBUTING.md) file.
+[Contributing](https://github.com/elhub/common-bom/blob/main/CONTRIBUTING.md) file.
 
 ## Owners
 
 This project is developed by [Elhub](https://github.com/elhub). For the specific development group responsible for this
-code, see the [Codeowners](https://code.elhub.cloud/projects/COM/repos/common-bom/browse/CODEOWNERS) file.
+code, see the [Codeowners](https://github.com/elhub/common-bom/blob/main/CODEOWNERS) file.
 
 ## License
 
