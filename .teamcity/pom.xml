@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <name>CommonParent Config DSL Script</name>
-  <groupId>CommonParent</groupId>
-  <artifactId>CommonParent_dsl</artifactId>
+  <name>TeamCity Config DSL Script</name>
+  <groupId>no.elhub.teamcity</groupId>
+  <artifactId>Common_dsl</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <parent>
@@ -12,7 +12,18 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
+  <properties>
+    <common-build-configuration.version>[0.10.0,0.11.0)</common-build-configuration.version>
+  </properties>
+
   <repositories>
+    <repository>
+      <id>artifactory</id>
+      <url>https://jfrog.elhub.cloud:443/artifactory/elhub-mvn/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
     <repository>
       <id>jetbrains-all</id>
       <url>https://download.jetbrains.com/teamcity-repository</url>
@@ -75,6 +86,12 @@
   </build>
 
   <dependencies>
+    <dependency>
+      <groupId>no.elhub.common</groupId>
+      <artifactId>common-build-configuration</artifactId>
+      <version>${common-build-configuration.version}</version>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
       <groupId>org.jetbrains.teamcity</groupId>
       <artifactId>configs-dsl-kotlin</artifactId>
