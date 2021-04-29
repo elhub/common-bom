@@ -66,7 +66,8 @@ project {
                 vcsRoot = DslContext.settingsRoot,
                 type = ProjectType.GRADLE,
                 sonarId = projectId,
-                sonarProjectSources = "."
+                sonarProjectSources = ".",
+                sonarProjectTests = null
             )
         )
     )
