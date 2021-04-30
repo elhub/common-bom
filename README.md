@@ -26,7 +26,8 @@
 ## About
 
 **common-bom** is the maven BOM (bill of materials) for the common elhub modules. It helps to harmonize the
-versions of libraries used in projects, and simplify updates.
+versions of libraries used in projects and simplify updates. You will need access to a version of these
+bom to build any of our Jvm common modules.
 
 ## Getting Started
 
