@@ -40,6 +40,7 @@ dependencies {
         api(Libs.Logback.classic)
         api(Libs.Logback.core)
         api(Libs.Oracle.ojdbc8)
+        api(Libs.PicoCli.picocli)
         api(Libs.Slf4j.api)
         api(Libs.Slf4j.simple)
     }

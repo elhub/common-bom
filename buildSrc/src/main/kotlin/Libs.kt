@@ -15,6 +15,7 @@ object Libs {
         const val junit = "5.7.1"
         const val koTest = "4.4.3"
         const val logback = "1.2.3"
+        const val picocli = "4.6.1"
         const val slf4j = "1.7.30"
     }
 
@@ -73,6 +74,13 @@ object Libs {
 
     object Oracle {
         const val ojdbc8 = "com.oracle.jdbc:ojdbc8:${Versions.jdbc8}"
+    }
+
+    object PicoCli {
+        const val picocli = "info.picocli:picocli:${Versions.picocli}"
+        // FIXME This is used as annotationProcessor dependency,
+        //  but it's not possible to get the version from the bom.
+//        const val codegen = "info.picocli:picocli-codegen:${Versions.picocli}"
     }
 
     object Slf4j {
