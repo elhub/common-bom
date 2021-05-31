@@ -64,7 +64,13 @@ object Libs {
 
     object KoTest {
         const val runner = "io.kotest:kotest-runner-junit5:${Versions.koTest}"
-        const val allure = "io.kotest:kotest-extensions-allure-jvm:${Versions.koTest}"
+        const val assertions = "io.kotest:kotest-assertions-core:${Versions.koTest}"
+        const val property = "io.kotest:kotest-property:${Versions.koTest}"
+
+        object Extensions {
+            const val allure = "io.kotest:kotest-extensions-allure-jvm:${Versions.koTest}"
+            const val testcontainers = "io.kotest.extensions:kotest-extensions-testcontainers:1.0.0" // Version differs from the rest
+        }
     }
 
     object Logback {
