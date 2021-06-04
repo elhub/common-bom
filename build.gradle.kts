@@ -3,7 +3,7 @@ import org.jfrog.gradle.plugin.artifactory.dsl.PublisherConfig
 
 plugins {
     id("java-platform")
-    id("com.github.ben-manes.versions") version "0.38.0"
+    id("com.github.ben-manes.versions") version "0.39.0"
     id("com.jfrog.artifactory") version "4.21.0"
     id("maven-publish") apply true
 }
@@ -85,13 +85,16 @@ tasks.withType<GenerateModuleMetadata> {
     enabled = false
 }
 
+/*
+ * Publishing
+ */
 artifactory {
-    setContextUrl("https://jfrog.elhub.cloud/artifactory")
+    setContextUrl(project.findProperty("artifactoryUri") ?: "https://jfrog.example.com/artifactory")
     publish(delegateClosureOf<PublisherConfig> {
         repository(delegateClosureOf<groovy.lang.GroovyObject> {
-            setProperty("repoKey", project.findProperty("mavenrepo") ?: "elhub-mvn-dev-local")
-            setProperty("username", project.findProperty("mavenuser") ?: "nouser")
-            setProperty("password", project.findProperty("mavenpass") ?: "nopass")
+            setProperty("repoKey", project.findProperty("artifactoryRepository") ?: "elhub-mvn-dev-local")
+            setProperty("username", project.findProperty("artifactoryUsername") ?: "nouser")
+            setProperty("password", project.findProperty("artifactoryPassword") ?: "nopass")
         })
         defaults(delegateClosureOf<groovy.lang.GroovyObject> {
             invokeMethod("publications", mavenPubName)
@@ -104,3 +107,12 @@ artifactory {
 }
 
 tasks["publish"].dependsOn(tasks["artifactoryPublish"])
+
+/*
+ * TeamCity
+ */
+tasks.register("teamCity", Exec::class) {
+    description = "Compile the TeamCity settings"
+    workingDir(".teamcity")
+    commandLine("mvn","compile")
+}
