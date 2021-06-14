@@ -16,7 +16,7 @@ object Libs {
     private object Versions {
         const val assertj = "3.19.0"
         const val common_date = "4.1.0"
-        const val common_jeim = "6.1.0"
+        const val common_jeim = "6.1.1"
         const val common_konfig = "0.3.0"
         const val commons_lang3 = "3.12.0"
         const val commons_logging = "1.2"
@@ -27,7 +27,7 @@ object Libs {
         const val jollyday = "0.5.10"
         const val junit = "5.7.2"
         const val koTest = "4.6.0"
-        const val koTestExtensions = "1.0.0"
+        const val koTestExtensions = "1.0.1"
         const val logback = "1.2.3"
         const val picocli = "4.6.1"
         const val slf4j = "1.7.30"
