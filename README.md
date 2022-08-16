@@ -9,21 +9,6 @@
 [![Vulnerabilities](https://sonar.elhub.cloud/api/project_badges/measure?project=no.elhub.common%3Acommon-bom&metric=vulnerabilities)](https://sonar.elhub.cloud/dashboard?id=no.elhub.common%3Acommon-bom)
 [![Coverage](https://sonar.elhub.cloud/api/project_badges/measure?project=no.elhub.common%3Acommon-bom&metric=coverage)](https://sonar.elhub.cloud/dashboard?id=no.elhub.common%3Acommon-bom)
 
-
-## Table of Contents
-
-* [About](#about)
-* [Getting Started](#getting-started)
-    * [Prerequisites](#prerequisites)
-    * [Installation](#installation)
-* [Usage](#usage)
-* [Testing](#testing)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [Owners](#owners)
-* [License](#license)
-
-
 ## About
 
 **common-bom** is the maven BOM (bill of materials) for the common elhub modules. It helps to harmonize the
@@ -72,16 +57,11 @@ To use the dependencies, simply add the dependencies into your maven or gradle p
 
 ## Testing
 
-There are no unit tests for common-bom. In order to check whether the dependencies are up to date, however, you can always run:
+There are no unit tests for common-bom. In order to check whether the dependencies are up to date, however, you can
+always run:
 ```xml
 ./gradlew dependencyUpdates
 ```
-
-## Roadmap
-
-See the
-[open issues](https://jira.elhub.cloud/issues/?jql=project%20%3D%20TD%20AND%20component%20%3D%20common-bom%20AND%20resolution%20%3D%20Unresolved)
-for a list of proposed features (and known issues).
 
 ## Contributing
 
@@ -92,7 +72,3 @@ Contributing, issues and feature requests are welcome. See the
 
 This project is developed by [Elhub](https://github.com/elhub). For the specific development group responsible for this
 code, see the [Codeowners](https://github.com/elhub/common-bom/blob/main/CODEOWNERS) file.
-
-## License
-
-This project is proprietary.
