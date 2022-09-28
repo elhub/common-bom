@@ -1,13 +1,6 @@
-# common-bom
+This repository is DEPRECATED.
 
-[![Git Repository](https://img.shields.io/badge/repo-github-blue)](https://github.com/elhub/common-bom)
-[![Jira Issues](https://img.shields.io/badge/issues-jira-orange)](https://jira.elhub.cloud/issues/?jql=project%20%3D%20%22Team%20Dev%22%20AND%20component%20%3D%20common-bom%20AND%20status%20!%3D%20Done)
-[![TeamCity Build](https://teamcity.elhub.cloud/app/rest/builds/buildType:(id:Common_CommonBom_AutoRelease)/statusIcon)](https://teamcity.elhub.cloud/project/Common_CommonBom?mode=builds#all-projects)
-[![Quality Gate Status](https://sonar.elhub.cloud/api/project_badges/measure?project=no.elhub.common%3Acommon-bom&metric=alert_status)](https://sonar.elhub.cloud/dashboard?id=no.elhub.common%3Acommon-bom)
-[![Lines of Code](https://sonar.elhub.cloud/api/project_badges/measure?project=no.elhub.common%3Acommon-bom&metric=ncloc)](https://sonar.elhub.cloud/dashboard?id=no.elhub.common%3Acommon-bom)
-[![Bugs](https://sonar.elhub.cloud/api/project_badges/measure?project=no.elhub.common%3Acommon-bom&metric=bugs)](https://sonar.elhub.cloud/dashboard?id=no.elhub.common%3Acommon-bom)
-[![Vulnerabilities](https://sonar.elhub.cloud/api/project_badges/measure?project=no.elhub.common%3Acommon-bom&metric=vulnerabilities)](https://sonar.elhub.cloud/dashboard?id=no.elhub.common%3Acommon-bom)
-[![Coverage](https://sonar.elhub.cloud/api/project_badges/measure?project=no.elhub.common%3Acommon-bom&metric=coverage)](https://sonar.elhub.cloud/dashboard?id=no.elhub.common%3Acommon-bom)
+# common-bom
 
 ## About
 
